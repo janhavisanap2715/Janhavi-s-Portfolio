@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  outline: none;
+}
+
+body {
+  background: url('./img/wallpaper.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.seperation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+header img {
+  width: 390px;
+  height: 390px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+header p:first-child {
+  position: relative;
+}
+header p:first-child::after {
+  content: '\2713';
+  position: absolute;
+  display: block;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f9b52e;
+  border-radius: 50%;
+  bottom: 55px;
+  right: 38px;
+}
+header img:first-child {
+  border: 7px solid #f9b52e;
+}
+header h1 {
+  margin-bottom: -25px;
+}
+h1 {
+  font-size: 55px;
+}
+h1,
+h2,
+p {
+  color: #fff;
+}
+.arrow {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* About Section */
+.top-arrow {
+  transform: rotate(180deg);
+}
+p {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 140px;
+}
+.about a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+.about a:hover {
+  transition: all 0.25s ease-in-out;
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-25px);
+}
+/* Education Section */
+.education table {
+  color: #fff;
+  border: 3px solid #fff;
+  border-collapse: collapse;
+}
+.education table td,
+.education table th {
+  border: 3px solid #fff;
+  padding: 10px 15px;
+}
+.social-icons {
+  flex-direction: row;
+}
+.social-icons a img {
+  width: 120px;
+  margin-left: 40px;
+}
+.social-icons a img:hover {
+  transform: translateY(-25px);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 786px) {
+  h1 {
+    font-size: 35px;
+  }
+  .seperation {
+    height: 94vh;
+  }
+  header h1 {
+    margin-bottom: -50px;
+  }
+  header img {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 20px;
+    margin: 0 20px;
+  }
+  .education table {
+    border: 1px solid #fff;
+    margin: 0 10px;
+    font-size: 10px;
+  }
+  .education table td,
+  .education table th {
+    border: 1px solid #fff;
+    padding: 2px 10px;
+  }
+  .social-icons {
+    flex-wrap: wrap;
+  }
+  .social-icons a img {
+    width: 50px;
+    margin-left: 10px;
+  }
+  header p:first-child::after {
+    content: '\2713';
+    position: absolute;
+    display: block;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    width: 25px;
+    font-size: 20px;
+    height: 25px;
+    background-color: #f9b52e;
+    border-radius: 50%;
+    bottom: 35px;
+    right: 25px;
+  }
+}

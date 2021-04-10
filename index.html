@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janhavi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="seperation ">
+        <p>
+            <img src="./img/Janhavi.jpg" alt="Janhavi Sanap">
+        </p>
+        <p>
+            <h1>Janhavi Sanap</h1>
+            <h2>Full Stack Developer</h2>
+        </p>
+        <img src="./img/down arrow.gif" class="arrow" id="BottomId" alt="" onclick="moveToSection(this.id,1)">
+    </header>
+    <section class="about seperation">
+        <img src="./img/down arrow.gif" id="TopId" class="arrow top-arrow" alt="" onclick="moveToSection(this.id, 0)">
+        <h1>About</h1>
+        <p>A passionate individual who loves building web applications, a developer and musician by passion, an engineer by profession and a photographer by interest. The motto of my life is to be determined towards the software world and its development for the betterment in the standard of living of the society.</p>
+        <a href= "./docs/Resume.pdf" target="_blank">📄 Download Resume</a>
+        <img src="./img/down arrow.gif" class="arrow" id="BottomId" alt="" onclick="moveToSection(this.id,2)">
+    </section>
+    <section class="education seperation">
+        <img src="./img/down arrow.gif" class="arrow top-arrow" id="TopId" class="arrow top-arrow" alt="" onclick="moveToSection(this.id, 1)">
+        <h1>Education</h1>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>School/University</th>
+                <th>Year of Passing</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>B.E. in Computer Science</td>
+                <td>Pune University</td>
+                <td>2023</td>
+                <td>Persuing</td>
+            </tr>
+            <tr>
+                <td>Diploma in Computer Enginnering</td>
+                <td>MSBTE</td>
+                <td>2020</td>
+                <td>86%</td>
+            </tr>
+            <tr>
+                <td>Secondary School Certification</td>
+                <td>Maratha Highschool, Nashik</td>
+                <td>2017</td>
+                <td>83%</td>
+            </tr>
+        </table>
+        <img src="./img/down arrow.gif" class="arrow" id="BottomId" alt="" onclick="moveToSection(this.id,3)">
+    </section>
+    <section class="contact seperation">
+        <img src="./img/down arrow.gif" class="arrow top-arrow" id="TopId" class="arrow top-arrow" alt="" onclick="moveToSection(this.id, 2)">
+        <br>
+        <br>
+        <h1>Get In Touch</h1>
+        <div class="seperation social-icons">
+            <a href="">
+                <img src="./Contacts/facebook.png" target="_blank" alt="">
+            </a><a href="mailto:janhavisanap2001@gmail.com">
+                <img src="./Contacts/mail.png" target="_blank" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/janhavi-sanap-781335171">
+                <img src="./Contacts/linkedin.png" target="_blank" alt="">
+            </a>
+            <a href="">
+                <img src="./Contacts/instagram.png" target="_blank" alt="">
+            </a>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
